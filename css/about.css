@@ -1,0 +1,28 @@
+@import url("./style.css");
+
+img {
+  width: 100%;
+}
+
+.about .container {
+  padding-top: 120px;
+}
+
+.about .grid-display {
+  margin-top: 30px;
+  grid-template-columns: repeat(auto, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid-child {
+  width: 100%;
+  max-width: 400px;
+}
+
+.grid-text {
+  font-size: 15px;
+}
+
+.grid-child img {
+  border-radius: 8px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedTec</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/hospital.css">
+</head>
+<body>
+    <main>
+        <header class="header " id="header">
+            <div class="container">
+                <a href="../index.html" class="brand">Medilo.</a>
+                <button class="menu-btn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="./about.html" class="nav-links">About</a></li>
+                        <li><a href="./services.html" class="nav-links">Care Services</a></li>
+                        <li><a href="./hospital.html" class="nav-links">Find A Hospital</a></li>
+                        <li><a href="./contact.html" class="nav-links">Contact</a></li>
+                    </ul>
+                     <div class="quick-btn">
+                    <button class="btn">Log In</button>
+                    <button class="btn">Sign In </button>
+                </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="section hero">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="heading text-center">Find Hospital Nearby.</h1>
+                    <p class="sub-heading">We take the  guesswork out od finding the right doctors, hospitals and care for you and your family.</p>
+                    <form action="" class="search-field">
+                        <input type="text" name="search-input" id="search-input" placeholder="Lagos, Nigeria...">
+                        <button class="search-btn">Find A Doctor</button>
+                    </form>
+                </div>
+                <div class="search-box">
+                    <h3 class="section-title text-center">Search</h3>
+                    <p class="section-description text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="location"></p>
+                    <a href="../pages/appointment.html" class="btn hidden">Schedule</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/hospital.js"></script>
+    <script>
+        function navigateForms(new_location) {
+          window.location.assign(new_location);
+        }
+  
+        const buttons = document.querySelectorAll(".quick-btn .btn");
+  
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            if (button.textContent.trim().toLowerCase() == "log in") {
+              navigateForms("/pages/login.html");
+            } else {
+              navigateForms("/pages/register.html");
+            }
+          });
+        });
+      </script>
+</body>
+</html>

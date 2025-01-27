@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedTec</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <main>
+        <header class="header" id="header">
+            <div class="container">
+                <a href="index.html" class="brand">Medilo.</a>
+                <button class="menu-btn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="./pages/about.html" class="nav-links">About</a></li>
+                        <li><a href="./pages/services.html" class="nav-links">Care Services</a></li>
+                        <li><a href="./pages/hospital.html" class="nav-links">Find A Hospital</a></li>
+                        <li><a href="./pages/contact.html" class="nav-links">Contact</a></li>
+                    </ul>
+                     <div class="quick-btn">
+                    <button class="btn">Log In</button>
+                    <button class="btn">Sign In </button>
+                </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="section hero">
+            <div class="container flex">
+                <div class="hero-text">
+                    <h1 class="heading">Feel Better About Finding Healthcare.</h1>
+                    <p class="sub-heading">We take the  guesswork out od finding the right doctors, hospitals and care for you and your family.</p>
+                    <form action="" class="search-field">
+                        <input type="text" name="search-input" id="search-input" placeholder="Lagos, Nigeria...">
+                        <button class="search-btn">Find A Doctor</button>
+                    </form>
+                </div>
+                <div class="hero-avatar">
+                    <img src="../asset/surgery.jpg" alt="..doctor-img" width="100%">
+                </div>
+            </div>
+        </section>
+
+        <section class="section services">
+            <div class="container">
+                <h2 class="section-title text-center">Care Services</h2>
+                <p class="section-description text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, architecto?</p>
+                <div class="grid-display">
+                    <div class="card">
+                        <h3 class="card-topic">Dentistry</h3>
+                        <ul class="card-list">
+                            <li>1st degree</li>
+                            <li>1st degree</li>
+                            <li>1st degree</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-topic">Dentistry</h3>
+                        <ul class="card-list">
+                            <li>1st degree</li>
+                            <li>1st degree</li>
+                            <li>1st degree</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-topic">Dentistry</h3>
+                        <ul class="card-list">
+                            <li>1st degree</li>
+                            <li>1st degree</li>
+                            <li>1st degree</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="./pages/services.html" class="more-btn">See Other Services</a>
+            </div>
+        </section>
+
+        <section class="section contact">
+            <div class="container">
+                <div class="grid-display">
+                    <div class="about">
+                        <h3 class="section-title text-center">About Us</h3>
+                        <div class="about-description">
+                            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repudiandae quam, est explicabo tenetur ad illo quis error asperiores totam neque vitae, numquam possimus odit! In labore nisi perspiciatis ut!</p>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <h3 class="section-title text-center">Contact Us</h3>
+                        <form action="" class="form">
+                            <div class="input-field">
+                                <label for="fullname">Fullname</label>
+                                <input type="text" name="fullname" id="fullname" class="fullname" required>
+                            </div>
+                            <div class="input-field">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="email" required>
+                            </div>
+                            <div class="input-field">
+                                <label for="phone">Phone</label>
+                                <input type="phone" name="phone" id="phone" class="phone" required>
+                            </div>
+                            <div class="input-field">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" class="message" required></textarea>
+                            </div>
+                            <button class="submit btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <a href="#" class="brand">Medilo.</a>
+                <p>All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <div class="search-overlay">
+            <button class="close-overlay">+</button>
+            <div class="search-box">
+                <h3 class="section-title text-center">Search</h3>
+                <p class="section-description text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="doctors-profile"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedTec</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+  </head>
+
+  <body>
+    <main>
+      <header class="header" id="header">
+        <div class="container">
+          <a href="../index.html" class="brand">Medilo.</a>
+          <button class="menu-btn">
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+          <nav class="nav" id="nav">
+            <ul>
+              <li><a href="./about.html" class="nav-links">About</a></li>
+              <li>
+                <a href="./services.html" class="nav-links">Care Services</a>
+              </li>
+              <li>
+                <a href="./hospital.html" class="nav-links">Find A Hospital</a>
+              </li>
+              <li><a href="./contact.html" class="nav-links">Contact</a></li>
+            </ul>
+            <div class="quick-btn">
+              <button class="btn">Log In</button>
+              <button class="btn">Sign In</button>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section class="section about">
+        <div class="container">
+          <h2 class="section-title text-center">About Us</h2>
+          <p class="section-description text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam,
+            natus?
+          </p>
+          <div class="grid-display">
+            <div class="grid-child">
+              <p class="grid-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae quisquam aperiam distinctio, similique, quis fugit
+                provident ipsam temporibus, veniam facere molestias eos eum
+                nesciunt! Dignissimos dolore culpa quasi ipsa expedita.
+              </p>
+            </div>
+            <div class="grid-child">
+              <img src="../asset/doctor.jpg" alt="..doctor image" />
+            </div>
+            <div class="grid-child">
+              <p class="grid-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae quisquam aperiam distinctio, similique, quis fugit
+                provident ipsam temporibus, veniam facere molestias eos eum
+                nesciunt! Dignissimos dolore culpa quasi ipsa expedita.
+              </p>
+            </div>
+            <div class="grid-child">
+              <img src="../asset/surgery.jpg" alt="..surgery image" />
+            </div>
+          </div>
+          <a href="login.html" class="more-btn">Book an appointment</a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <a href="#" class="brand">Medilo.</a>
+          <p>All Rights Reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="../js/script.js"></script>
+    <script>
+      function navigateForms(new_location) {
+        window.location.assign(new_location);
+      }
+
+      const buttons = document.querySelectorAll(".quick-btn .btn");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          if (button.textContent.trim().toLowerCase() == "log in") {
+            navigateForms("/pages/login.html");
+          } else {
+            navigateForms("/pages/register.html");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

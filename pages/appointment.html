@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <main>
+        <header class="header " id="header">
+            <div class="container">
+                <a href="../index.html" class="brand">Medilo.</a>
+                <button class="menu-btn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="./about.html" class="nav-links">About</a></li>
+                        <li><a href="./services.html" class="nav-links">Care Services</a></li>
+                        <li><a href="./hospital.html" class="nav-links">Find A Hospital</a></li>
+                        <li><a href="./contact.html" class="nav-links">Contact</a></li>
+                    </ul>
+                     <div class="quick-btn">
+                    <button class="btn">Log In</button>
+                    <button class="btn">Sign In </button>
+                </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <div class="contact-box">
+            <h3 class="section-title text-center">Appointment</h3>
+            <form action="" class="form">
+                <div class="input-field">
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date" class="date" required>
+                </div>
+                <div class="input-field">
+                    <label for="time">Time</label>
+                    <input type="time" name="time" id="time" class="time" required>
+                </div>
+                <button class="submit btn">Book Appointment</button>
+            </form>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <a href="#" class="brand">Medilo.</a>
+                <p>All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.querySelector('.form').addEventListener("submit", (e) => {
+            e.preventDefault()
+
+            var date = document.querySelector(".date").value
+            var time = document.querySelector(".time").value
+
+            if(date !=='' && time !== ""){
+                alert("Success! \nYou've boked an appointment!");
+                window.location.href = "../"
+            }
+        })
+      </script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+@import url("./style.css");
+
+.hero {
+    height: 100vh;
+    padding-top: 120px;
+    background:
+    linear-gradient(rgba(0,0,0, .6) 80%, rgba(225, 255, 225, .7)),
+    url("../asset/surgery.jpg") center/cover no-repeat;
+}
+
+.hero .container {
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    margin-top: 20px;
+    margin-bottom: 2rem;
+    text-align: start;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--white-color);
+    text-shadow: 2px 4px  rgba(0, 0, 0, .6);
+}
+
+.sub-heading {
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    opacity: .8;
+    text-align: start;
+}
+
+.search-field {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+#search-input {
+    font-size: 18px;
+    padding: 10px 10px;
+    margin: 20px 0 10px;
+    border-radius: 0;
+    outline: none;
+    border: 3px solid var(--green-color);
+    border-radius: var(--radius-pill);
+}
+
+.search-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    color: var(--white-color);
+    border: 3px solid var(--green-color);
+    border-radius: var(--radius-pill);
+    background: var(--green-color);
+    transition: var(--transition-normal);
+    filter: drop-shadow(4px 4px 1rem rgba(0, 0, 0 ,.32));
+}
+
+.search-btn:hover {
+    color: var(--green-color);
+    background: var(--white-color);
+}
+
+.hero-avatar {
+    display: none;
+}
+
+.services .container {
+    padding-block: 2.5rem 2rem;
+}
+
+.more-btn {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: 3px solid var(--green-color);
+    color: var(--white-color);
+    background: var(--green-color);
+    border-radius: var(--radius-pill);
+    transition: var(--transition-normal);
+    box-shadow: 4px 4px 1rem rgba(0, 0, 0, .4);
+}
+
+.more-btn:hover {
+    color: var(--green-color);
+    background: var(--bg-color);
+}
+
+.contact .container {
+    padding-top: 40px;
+}
+
+.contact-box {
+    background: var(--bg-color);
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-box .section-title {
+    margin: 20px 0;
+}
+
+.form .input-field {
+    margin: 10px 0;
+}
+
+.form input {
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    transition: var(--transition-normal);
+}
+
+.form input:hover,
+.form input:focus {
+    border-color: var(--green-color);
+}
+
+.message {
+    padding: 10px;
+    height: 200px;
+    max-height: 320px;
+    resize: none;
+    outline: none;
+    transition: var(--transition-normal);
+}
+
+
+.message:hover,
+.message:focus {
+    border-color: var(--green-color);
+ }
+
+ .submit {
+    margin-top: 30px;
+    opacity: 1;
+}
+
+.search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    background:rgba(0, 0, 0 ,.72);
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    transform: scale(0);
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition-normal);
+    z-index: 2;
+}
+
+.search-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.close-overlay{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 50%;
+    transform: rotate(41deg);
+    color: var(--green-color);
+    background: var(--white-color);
+}
+
+.search-box{
+    margin-top: 4rem;
+    padding: 20px 20px;
+    background: var(--white-color);
+}
+
+.doctors-profile{
+    display: block;
+}
+
+.doctor-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-block: 20px;
+}
+
+.name,
+.bold {
+    font-weight: bold;
+}
+
+@media (min-width: 570px) {
+
+    .hero {
+        min-height: 80vh;
+        padding-top: 200px;
+    }
+
+    .services {
+        min-height: 80vh;
+    }
+    .services .container {
+        padding-bottom: 0;
+    }
+    .hero-text {
+        text-align: center;
+    }
+
+    .sub-heading {
+        text-align: center;
+    }
+
+    .grid-display {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .contact .container {
+        padding-top: 0px;
+    }
+
+    .contact .grid-display {
+        column-gap: 3rem;
+        padding-top: 20px;
+        align-items: top;
+    }
+
+    .contact-box .section-title{
+        margin: 0;
+    }
+
+    .about-text {
+        font-size: 18px;
+        margin-top: 4rem;
+    }
+
+    .contact-box .form {
+        margin-top: 50px;
+    }
+
+    .more-btn {
+        display: block;
+        width: 220px;
+        margin-inline: auto;
+    }
+
+    .search-overlay{
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.0);
+    }
+
+    .search-overlay.active {
+        width: 70%;
+        height: 70%;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .search-box img {
+        width: 100px;
+        height: 100px;
+    }
+    .search-box .more-btn {
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .heading {
+        font-size: 50px;
+    }
+    .sub-heading {
+        width: 70%;
+        margin-inline: auto;
+    }
+    .search-field {
+        width: 70%;
+        margin: auto;
+    }
+}

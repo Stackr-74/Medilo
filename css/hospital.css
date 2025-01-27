@@ -1,0 +1,22 @@
+.hero {
+    min-height: 100vh;
+}
+
+.location {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.hidden {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin: 3rem auto;
+    background: var(--green-color);
+    color: var(--white-color);
+}
+
+.search-box.active .hidden{
+    display: block;
+}

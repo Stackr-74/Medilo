@@ -1,0 +1,34 @@
+.contact-box {
+    display: block;
+    margin: 120px auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+form {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+.input-field {
+    margin-top: 20px;
+}
+
+form input {
+    padding: 8px;
+}
+
+.submit {
+    margin-top: 28px;
+}
+
+.message {
+    height: 240px;
+    resize: none;
+}
